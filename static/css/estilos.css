@@ -3,12 +3,14 @@
   --cinza-escuro: #1C1C1C;
   --verde-escuro: #187575;
   --verde: #0fc2c0;
-  --branca: #fff;
+  --branca: #EEEEEE;
   --luz: #0fc2c0;
   --preto: #000000;
+  --font-header: 16px "Constantia";
 }
 
 .header, .header__links {
+  font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -145,4 +147,54 @@ h1 {
   box-shadow: 3px 3px 0 var(--verde) inset, 1px 1px 10px var(--luz);
 }
 
+.footer {
+  font-family: Roboto, sans-serif;
+  color: var(--branca);
+  background-color: var(--cinza-escuro);
+  position: fixed;
+  box-sizing: border-box;
+  bottom: 0px;
+  height: 3em;
+  width: 100%;
+  padding: 0 2%;
+  box-shadow: 0px 0px 4px var(--verde);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
 
+.footer__framework_icons {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 30%;
+  margin: 2% 0;
+}
+
+.footer__framework_icons img {
+  width: 1.1em;
+}
+
+@media screen and (max-width: 780px){
+  .header__btn_menu {
+    display: block;
+  }
+
+  .header__links {
+    display: none;
+  }
+}
+
+@keyframes show_side_bar {
+  from {left: -100vw;}
+  to {left: 0vw;}
+  
+}
+
+@keyframes close_side_bar {
+  from {left: -0vw;}
+  to {left: -100vw;}
+  
+}
