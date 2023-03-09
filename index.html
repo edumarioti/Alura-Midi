@@ -18,6 +18,28 @@
 </head>
 <body>
 
+    <header class="header" id="header">
+
+        <nav class="header__links" id="header__links">
+            <a href="https://eduardomarioti.com.br/#perfil">Perfil</a>
+            <a href="https://eduardomarioti.com.br/#hello">Olá</a>
+            <a href="https://eduardomarioti.com.br/#projects">Projetos</a>
+            <a href="https://eduardomarioti.com.br/#hard_skills">Hard Skills</a>
+            <a href="https://eduardomarioti.com.br/#graduate">Formação</a>
+            <a href="https://eduardomarioti.com.br/#courses">Cursos</a>
+        </nav>
+
+        <button onclick="toggle_sidebar()" class="header__btn_menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="side_bar__button" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        
+        <a href="#" class="header__logo">
+            <img src="static/images/logo_1.png" class="header__logo_picture" alt="">
+        </a>
+
+    </header>
     <h1>Alura Midi</h1>
 
     <section class="teclado">
@@ -33,6 +55,8 @@
         <button onclick="" class="tecla tecla_tic">Tic</button>
         <button onclick="" class="tecla tecla_tom">Tom</button>
     </section>
+
+
 
     <audio src="static/sounds/keyq.wav" id="som_tecla_pom"></audio>
     <audio src="static/sounds/keyw.wav" id="som_tecla_clap"></audio>
