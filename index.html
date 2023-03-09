@@ -38,35 +38,54 @@
         <a href="#" class="header__logo">
             <img src="static/images/logo_1.png" class="header__logo_picture" alt="">
         </a>
-
+        
     </header>
-    <h1>Alura Midi</h1>
 
-    <section class="teclado">
-        <button onclick="tocaSomPom()" class="tecla tecla_pom">Pom</button>
-        <button onclick="tocaSomClap()" class="tecla tecla_clap">Clap</button>
-        <button onclick="" class="tecla tecla_tim">Tim</button>
+    <div class="sidebar" id="sidebar">
 
-        <button onclick="" class="tecla tecla_puff">Puff</button>
-        <button onclick="" class="tecla tecla_splash">Splash</button>
-        <button onclick="" class="tecla tecla_toim">Toim</button>
+        <button class="header__btn_menu toggle_menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="side_bar__button" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+        </button>
 
-        <button onclick="" class="tecla tecla_psh">Psh</button>
-        <button onclick="" class="tecla tecla_tic">Tic</button>
-        <button onclick="" class="tecla tecla_tom">Tom</button>
-    </section>
+        <a href="https://eduardomarioti.com.br/#perfil">Perfil</a>
+        <a href="https://eduardomarioti.com.br/#hello">Olá</a>
+        <a href="https://eduardomarioti.com.br/#projects">Projetos</a>
+        <a href="https://eduardomarioti.com.br/#hard_skills">Hard Skills</a>
+        <a href="https://eduardomarioti.com.br/#graduate">Formação</a>
+        <a href="https://eduardomarioti.com.br/#courses">Cursos</a>
+    </div>
 
+    <main class="main" id="main">
 
+        <h1>Alura Midi</h1>
 
-    <audio src="static/sounds/keyq.wav" id="som_tecla_pom"></audio>
-    <audio src="static/sounds/keyw.wav" id="som_tecla_clap"></audio>
-    <audio src="static/sounds/keye.wav" id="som_tecla_tim"></audio>
-    <audio src="static/sounds/keya.wav" id="som_tecla_puff"></audio>
-    <audio src="static/sounds/keys.wav" id="som_tecla_splash"></audio>
-    <audio src="static/sounds/keyd.wav" id="som_tecla_toim"></audio>
-    <audio src="static/sounds/keyz.wav" id="som_tecla_psh"></audio>
-    <audio src="static/sounds/keyx.wav" id="som_tecla_tic"></audio>
-    <audio src="static/sounds/keyc.wav" id="som_tecla_tom"></audio>
+        <section class="teclado">
+            <button class="tecla tecla_pom">Pom</button>
+            <button class="tecla tecla_clap">Clap</button>
+            <button class="tecla tecla_tim">Tim</button>
+
+            <button class="tecla tecla_puff">Puff</button>
+            <button class="tecla tecla_splash">Splash</button>
+            <button class="tecla tecla_toim">Toim</button>
+
+            <button class="tecla tecla_psh">Psh</button>
+            <button class="tecla tecla_tic">Tic</button>
+            <button class="tecla tecla_tom">Tom</button>
+        </section>
+
+        <audio src="static/sounds/keyq.wav" id="som_tecla_pom"></audio>
+        <audio src="static/sounds/keyw.wav" id="som_tecla_clap"></audio>
+        <audio src="static/sounds/keye.wav" id="som_tecla_tim"></audio>
+        <audio src="static/sounds/keya.wav" id="som_tecla_puff"></audio>
+        <audio src="static/sounds/keys.wav" id="som_tecla_splash"></audio>
+        <audio src="static/sounds/keyd.wav" id="som_tecla_toim"></audio>
+        <audio src="static/sounds/keyz.wav" id="som_tecla_psh"></audio>
+        <audio src="static/sounds/keyx.wav" id="som_tecla_tic"></audio>
+        <audio src="static/sounds/keyc.wav" id="som_tecla_tom"></audio>
+    
+    </main>
 
     <footer class="footer">
         <div class="footer__framework_icons">
@@ -80,6 +99,7 @@
         </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="static/scripts/main.js"></script>
+    <script src="static/scripts/sidebar.js"></script>
 </body>
 </html>
